@@ -1,0 +1,148 @@
+#heatMap {
+    width: 100%;
+    max-width: 1000px;
+    display: flex;
+    flex-direction: column;
+    margin:auto;
+    font-family: din-2014,Arial,Helvetica,sans-serif;
+    font-weight: 200;
+    background-color: white;
+    padding: 20px; 
+}
+
+body{
+  margin:0;
+}
+
+@media screen and (max-width: 885px) {
+  #heatMap {
+    width: 95%;
+  }
+}
+
+#heatMapImages{
+  width: 100%;
+  text-align: center;
+  white-space: nowrap;
+}
+
+#heatMapImages img{
+    max-height: 88vh;
+    margin:auto;
+    margin-left:5px;
+    margin-right: 5px;
+}
+#heatMapSlider{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    white-space: nowrap;
+    margin: 15px 0 0 0;
+}
+
+#sliderInput{
+  width: 100%;
+  margin-left: 20px;
+  margin-right: 20px;
+  position: relative;
+}
+
+#slider{
+    width: 100%;
+    display: flex;
+    align-content: center;
+}
+
+#sliderTooltip{
+  position: absolute;
+  left: 0;
+  text-align: center;
+  top:-37px;
+  background-color: #e0e0e0;
+  padding: 5px 10px 5px 10px;
+  border-radius: 5px;
+  display: none;
+  font-size: 14px;
+}
+
+#tooltipArrow{
+  position: absolute;
+  top: -11px; /* At the bottom of the tooltip */
+  left: 0;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #e0e0e0 transparent transparent transparent;
+  display: none;
+}
+
+#slider input[type=range]{
+    -webkit-appearance: none;
+    width: 100%;
+    margin: 13.8px 0;
+}
+
+input[type='range'] {
+  -webkit-appearance: none;
+}
+
+/*Chrome*/
+input[type='range']::-webkit-slider-runnable-track {
+    height: 3px;
+    border-radius: 5px;
+    -webkit-appearance: none;
+    box-shadow: 0px 1px 2px 0px darkgray;
+    background-color: #e0e0e0;
+}
+
+input[type='range']::-webkit-slider-thumb {
+    width: 26px;
+    border-radius: 5px;
+    -webkit-appearance: none;
+    height: 10px;
+    margin-top: -3px;
+    cursor: pointer;
+    background: #7a7a7a;
+}
+
+input[type=range]:focus {
+  outline: none;
+}
+
+/*Firefox*/
+input[type='range']::-moz-range-track {
+  height: 3px;
+  border-radius: 5px;
+  -webkit-appearance: none;
+  box-shadow: 0px 1px 2px 0px darkgray;
+  background-color: #e0e0e0;
+}
+
+input[type=range]::-moz-range-thumb {
+  width: 26px;
+  border-radius: 5px;
+  -webkit-appearance: none;
+  height: 10px;
+  margin-top: -3px;
+  cursor: pointer;
+  background: #7a7a7a;
+}
+
+/*Edge*/
+input[type='range']::-ms-track {
+  height: 3px;
+  border-radius: 5px;
+  -webkit-appearance: none;
+  box-shadow: 0px 1px 2px 0px darkgray;
+  background-color: #e0e0e0;
+}
+
+input[type='range']::-ms-thumb {
+  -webkit-appearance: none;
+  width: 26px;
+  border-radius: none;
+  height: 10px;
+  margin-bottom: -4px;
+  cursor: pointer;
+  background: #7a7a7a;
+}

@@ -1,0 +1,97 @@
+.leaflet-container{
+    background-color: #fff;
+}
+
+#map{
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    margin:auto;
+    font-family: din-2014,Arial,Helvetica,sans-serif;
+    font-weight: 100;
+    display:flex;
+    flex-direction: column;
+    border: 1px solid gray;
+}
+
+#tooltip{
+    z-index:9999;
+    box-sizing: border-box;
+    position: absolute;
+    min-height: 100px;
+    min-width: 215px;
+    max-width: 300px;
+    padding: 10px 15px 7px 15px;
+    box-shadow: 1px 1px 5px 0px gray;
+    background-color: #fff;
+    border: 1px solid darkgray;
+    display:flex;
+    flex-direction:column;
+}
+
+#tooltip h1{
+    margin:0;
+    font-size: 15px;
+    line-height: 1.5;
+    letter-spacing: 0.3px;
+}
+
+#tooltip small{
+    margin-right: -11px;
+    margin-bottom: -3px;
+    font-size: 10px;
+    margin-left: auto;
+    display:flex;
+    justify-content: flex-end;
+}
+
+#tooltip p{
+    margin-bottom:3px;
+    line-height: 1.5;
+}
+
+#tooltip i{
+    font-size: 12px;
+    margin-bottom:3px;
+    line-height: 1.5;
+}
+
+#tooltip b{
+    margin:0;
+    font-size: 13px;
+    line-height: 1.5;
+    letter-spacing: 0.3px;
+}
+
+#chartKey{
+    background-color: #fff;
+    bottom: 0;
+    display:flex;
+    justify-content: space-evenly;
+
+}
+
+.chartKeyList{
+    display:flex;
+    align-items: center;
+    margin:10px;
+}
+
+.chartKeyList p{
+    display:inline;
+    max-width: 200px;
+}
+
+.chartKeyVersion{
+    width: 15px;
+    height: 15px;
+    display:inline-block;
+    margin-right:10px;
+    border: 1px solid black;
+    box-shadow: 1px 1px 5px 0px gray;
+}
+
+p{
+    margin:0;
+    font-size: 12px;
+}
